@@ -1,4 +1,4 @@
-erry Traffic Stops – Contraband Prediction
+Terry Traffic Stops – Contraband Prediction
  Project Overview
 This project aims to build a predictive model to determine whether contraband was found during a traffic stop. The goal is to assist law enforcement analysis by identifying patterns in stop outcomes using machine learning.
 
