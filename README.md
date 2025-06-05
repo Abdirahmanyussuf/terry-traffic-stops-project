@@ -61,4 +61,3 @@ Pandas, NumPy
 
 Scikit-learn
 
-imbalanced-learn (optional)
