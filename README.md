@@ -1,19 +1,64 @@
-# Terry Traffic Stops Project
+erry Traffic Stops – Contraband Prediction
+ Project Overview
+This project aims to build a predictive model to determine whether contraband was found during a traffic stop. The goal is to assist law enforcement analysis by identifying patterns in stop outcomes using machine learning.
 
-Analyze police stop data to identify patterns and build a classification model.
+Dataset Description
+The dataset is based on traffic stop records and includes features such as:
 
-## Dataset
-Data source: https://data.seattle.gov/Public-Safety/Terry-Stops/28d7-7jij
+Stop Resolution
 
-## Project Structure
-- `data/`: raw datasets
-- `notebooks/`: Jupyter notebooks
-- `scripts/`: Python scripts
-- `outputs/`: charts, cleaned data, etc.
+Weapon Type
 
-## Setup
-Install dependencies:
-```
-pip install -r requirements.txt
-```
-Delete README.md
+Officer and Subject Demographics
+
+Call Types
+
+Flags (Arrest, Frisk)
+
+Officer Age
+
+Target: contraband_found (1 if contraband was found, else 0)
+
+ Data Preprocessing
+Checked and confirmed correct data types
+
+Handled class imbalance using class_weight='balanced'
+
+Categorical features encoded using OneHotEncoder via a ColumnTransformer
+
+Train-test split (80/20) with stratification to maintain class distribution
+
+No duplicates in train or test sets
+
+Modeling Approach
+Model: Logistic Regression
+
+Pipeline used for clean preprocessing and model training
+
+Balanced class weights to handle class imbalance
+
+Used max_iter=500 to ensure convergence
+
+ Evaluation Metrics
+Evaluated on test data using:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1 Score
+
+Confusion Matrix
+
+ All metrics reported a perfect score (1.0), indicating either a very strong model or potential overfitting.
+
+ Tech Stack
+Python
+
+Pandas, NumPy
+
+Scikit-learn
+
+imbalanced-learn (optional)
