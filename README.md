@@ -16,4 +16,4 @@ Install dependencies:
 ```
 pip install -r requirements.txt
 ```
-delete README.md
+Delete README.md
